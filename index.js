@@ -53,4 +53,4 @@ client.once('ready', () => {
 
 
 keepAlive()
-client.login("OTM1MTkxODE3MTkwODAxNDkx.Ye7DQA.5mQgpVlQIFDd-156uKhuIwkkc1A")
+client.login("**ZENSIERT**")
