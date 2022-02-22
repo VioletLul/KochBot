@@ -1,8 +1,6 @@
 const Discord = require("discord.js")
 const keepAlive = require("./server")
-const Database = require("@replit/database")
 const fs = require("fs")
-const db = new Database()
 const client = new Discord.Client({intents: [ ]});
 
 let prefix = 'F.';
