@@ -52,3 +52,5 @@ client.once('ready', () => {
 
 keepAlive()
 client.login("**ZENSIERT**")
+//Dran denken! Mit folgendem Befehl die Dateien ins git pushen!
+//Command:  git push -u origin main
