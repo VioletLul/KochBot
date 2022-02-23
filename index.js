@@ -25,11 +25,11 @@ client.on('message', message =>{
     } else if(command == 'obatzten'){
         client.commands.get('obatzten').execute(message, args, Discord)
     } else if(command == "play"){
-      client.commands.get('play').execute(message, args, Discord)
+        client.commands.get('play').execute(message, args, Discord)
     } else if(command == "leave"){
-      client.commands.get("leave").execute(message, args, Discord)
+        client.commands.get("leave").execute(message, args, Discord)
     } else if(command == "spaghetti"){
-      client.commands.get("spaghetti").execute(message, args, Discord)
+        client.commands.get("spaghetti").execute(message, args, Discord)
     }
 });
 
