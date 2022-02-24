@@ -53,4 +53,5 @@ client.once('ready', () => {
 keepAlive()
 client.login("OTM1MTkxODE3MTkwODAxNDkx.Ye7DQA.-DimMYeQihWbv9YkoJCppicg2BA")
 //Dran denken! Mit folgendem Befehl die Dateien ins git pushen!
+//Davor aber im GitHub Desktop die File Changes eintragen und absenden!
 //Command:  git push -u origin main
