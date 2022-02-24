@@ -25,33 +25,33 @@ client.on('message', message =>{
     } else if(command == 'obatzten'){
         client.commands.get('obatzten').execute(message, args, Discord)
     } else if(command == "play"){
-        client.commands.get('play').execute(message, args, Discord)
+      client.commands.get('play').execute(message, args, Discord)
     } else if(command == "leave"){
-        client.commands.get("leave").execute(message, args, Discord)
+      client.commands.get("leave").execute(message, args, Discord)
     } else if(command == "spaghetti"){
-        client.commands.get("spaghetti").execute(message, args, Discord)
+      client.commands.get("spaghetti").execute(message, args, Discord)
+    } else if(command == "sandwich"){
+      client.commands.get("sandwich").execute(message, args, Discord)
     }
 });
 
 client.once('ready', () => {
     console.log(`${client.user.username} ist jetzt online und bereit zum testen! Ich bin gerade auf ${client.guilds.cache.size} Servern! Um ${client.readyAt} wurden der Bot gestartet! Sollte mehr als 1 Monat vergangen sein, bitte neu starten!`);
-    client.user.setStatus('idle');
+    client.user.setStatus('dnd');
     setInterval(() => {
         const statuses = [
             'Jaja Rezepte werden hinzugefügt.',
-            //'NICHT BENUTZBAR BIS ICH WIEDER AUF "ONLINE" GESTELLT BIN!',
-            'Musik Befehle sind nun verfügbar!'
+            'Musik Befehle sind nun verfügbar!',
+            "Prefix: F.",
+            "Developer: ^^Violet#0461"
         ]
 
         const status = statuses[Math.floor(Math.random() * statuses.length)]
-        client.user.setActivity(status, { type: "COMPETING" })
+        client.user.setActivity(status, { type: "WATCHING" })
     }, 5000)
 });
 
 
-
+const mySecret = process.env['BOT_TOKEN']
 keepAlive()
-client.login("OTM1MTkxODE3MTkwODAxNDkx.Ye7DQA.-DimMYeQihWbv9YkoJCppicg2BA")
-//Dran denken! Mit folgendem Befehl die Dateien ins git pushen!
-//Davor aber im GitHub Desktop die File Changes eintragen und absenden!
-//Command:  git push -u origin main
+client.login(mySecret)
