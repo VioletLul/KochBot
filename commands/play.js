@@ -10,7 +10,7 @@ module.exports = {
         if (!voiceChannel) return message.channel.send('Geh in einen Sprachchannel und versuche es erneut!');
         const permissions = voiceChannel.permissionsFor(message.client.user);
         if (!permissions.has('CONNECT')) return message.channel.send('Du hast nicht die richtigen Berechtigungen dafür!');
-        if (!permissions.has('SPEAK')) return message.channel.send('Du hast nicht die richtigen Berechtigungen dafür! hjsdefiufjewi');
+        if (!permissions.has('SPEAK')) return message.channel.send('Du hast nicht die richtigen Berechtigungen dafür!');
         if (!args.length) return message.channel.send('Du kannst nicht nix hören!');
  
         const validURL = (str) =>{
