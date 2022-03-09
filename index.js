@@ -52,6 +52,6 @@ client.once('ready', () => {
 });
 
 
-const mySecret = process.env['BOT_TOKEN']
+const TOKENSECRET = process.env['BOT_TOKEN']
 keepAlive()
-client.login(mySecret)
+client.login(TOKENSECRET)
