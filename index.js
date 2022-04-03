@@ -43,7 +43,8 @@ client.once('ready', () => {
             'Jaja Rezepte werden hinzugefügt.',
             'Musik Befehle sind nun verfügbar!',
             "Prefix: F.",
-            "Developer: ^^Violet#0461"
+            "Developer: ^^Violet#0461",
+            "Über mich werden Github Alerts gemacht!"
         ]
 
         const status = statuses[Math.floor(Math.random() * statuses.length)]
