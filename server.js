@@ -8,9 +8,7 @@ server.all("/", (req, res) => {
     res.send(`Moin! Dieser Server ist exlusiv für den KochBot!`)
 })
 
-/**
- * Opens a port at port 3000 and logs the text in the console
- */
+//Opens a port at port 3000 and logs the text in the console
 function keepalive() {
     server.listen(3000, () => {
         console.log("Server ist gestartet. Warum bin ich hier?")
